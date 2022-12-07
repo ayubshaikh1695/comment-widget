@@ -12,7 +12,7 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid transparent;
   cursor: pointer;
   user-select: none;
 }
@@ -37,7 +37,7 @@
 }
 
 .secondary {
-  background-color: rgb(220, 0, 78);
+  background-color: #dc004e;
 }
 
 .secondary:hover {
@@ -49,9 +49,68 @@
   color: #fff;
 }
 
+.small {
+  padding: 4px 10px;
+}
+
+.small span {
+  font-size: 0.8125rem;
+}
+
+.outlined:not(.primary, .secondary) {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: none;
+}
+
+.outlined:not(.primary, .secondary):hover {
+  background: #fdfdfd;
+}
+
+.outlined:not(.primary, .secondary):active {
+  background-color: #f4f4f4;
+}
+
+.outlined.primary {
+  background: #fff;
+  border: 1px solid #1976d2;
+  box-shadow: none;
+}
+
+.outlined.primary span {
+  color: #1976d2;
+}
+
+.outlined.primary:hover {
+  background: #edf5fd;
+}
+
+.outlined.primary:active {
+  background-color: #dcebfb;
+}
+
+.outlined.secondary {
+  background: #fff;
+  border: 1px solid #dc004e;
+  box-shadow: none;
+}
+
+.outlined.secondary span {
+  color: #dc004e;
+}
+
+.outlined.secondary:hover {
+  background: #fff0f5;
+}
+
+.outlined.secondary:active {
+  background-color: #ffdce8;
+}
+
 .button-base:disabled {
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.12);
+  border-color: transparent;
   cursor: default;
   pointer-events: none;
 }

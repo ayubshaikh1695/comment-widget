@@ -5,14 +5,24 @@ import styles from "./button.module.css";
 
 // supported variants
 const VARIANTS = ["primary", "secondary"];
+// supported sizes
+const SIZES = ["small", "medium"];
 
 const Button = (props) => {
-  const { label, variant, disabled, onClick } = props;
+  const { label, variant, size, outlined, disabled, onClick } = props;
 
   let buttonClass = styles["button-base"];
 
   if (variant && VARIANTS.includes(variant)) {
-    buttonClass += " " + styles[variant];
+    buttonClass += ` ${styles[variant]}`;
+  }
+
+  if (size && SIZES.includes(size)) {
+    buttonClass += ` ${styles[size]}`;
+  }
+
+  if (outlined === true) {
+    buttonClass += ` ${styles.outlined}`;
   }
 
   return (
@@ -25,6 +35,8 @@ const Button = (props) => {
 Button.propTypes = {
   label: PropTypes.string,
   variant: PropTypes.string,
+  size: PropTypes.string,
+  outlined: PropTypes.bool,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
