@@ -1,0 +1,51 @@
+.wrapper {
+  display: inline-block;
+}
+
+.text-field-base {
+  outline: 0;
+  padding: 11px 14px;
+  margin-bottom: 4px;
+  min-width: 148px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.text-field-base:hover {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.text-field-base:focus {
+  padding: 10px 13px;
+  border-width: 2px;
+  border-color: #1976d2;
+}
+
+.text-field-base::placeholder {
+  font-size: 1rem;
+}
+
+.error,
+.error:hover {
+  border-color: #f44336;
+}
+
+.error:focus {
+  border-width: 2px;
+  border-color: #f44336;
+}
+
+.error-message-container {
+  min-height: 1.2rem;
+  line-height: 1.66;
+}
+
+.error-message-container span {
+  margin: 0;
+  color: #f44336;
+}
