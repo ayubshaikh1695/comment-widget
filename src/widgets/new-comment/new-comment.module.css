@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+.wrapper > div {
+  width: 100%;
+}
+
+.wrapper > button {
+  min-width: fit-content;
+}
