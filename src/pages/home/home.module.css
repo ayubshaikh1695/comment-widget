@@ -30,10 +30,6 @@
   margin-left: auto;
 }
 
-.listItem > div {
-  max-width: calc(100% - 16px);
-}
-
 .listItem:not(:last-child) {
   margin-bottom: 8px;
 }

@@ -180,7 +180,7 @@ const Home = () => {
                   onClick={handleDeleteAll}
                 />
               </div>
-              <ul className={styles.list}>
+              <ul>
                 {commentsList.map((comment) => (
                   <li key={comment.id} className={styles.listItem}>
                     <Comment

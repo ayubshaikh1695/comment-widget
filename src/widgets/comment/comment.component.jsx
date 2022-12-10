@@ -133,7 +133,7 @@ const Comment = (props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.flexWrap}>
-        <div>
+        <div className={styles.textContent}>
           <Typography variant="body2">{commentDetails.comment}</Typography>
           <Typography variant="caption-text" cssClass={styles.dateText}>
             {getFormattedDateAndTime(commentDetails.date)}
