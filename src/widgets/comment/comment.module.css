@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: calc(100% - 16px);
+  width: max-content;
+  padding: 12px;
+  border-left: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.flexWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexWrap {
+    flex-direction: row;
+  }
+}
+
+.dateText {
+  color: #666666;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: fit-content;
+}
+
+.textFieldContainer,
+.textFieldContainer > div {
+  width: 100%;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 8px;
+}
