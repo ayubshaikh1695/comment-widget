@@ -1,2 +1,43 @@
 .wrapper {
+  height: 100vh;
+  overflow: hidden auto;
+}
+
+.jumbotron {
+  max-width: 1400px;
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.mainContent {
+  max-width: calc(100% - 64px);
+  width: max-content;
+  padding: 16px;
+  border: 1.5px solid rgba(0, 0, 0, 0.23);
+  border-radius: 12px;
+}
+
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.deleteAllContainer > button {
+  display: block;
+  margin-left: auto;
+}
+
+.listItem > div {
+  max-width: calc(100% - 16px);
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.noCommentsText {
+  margin-top: 12px;
 }
